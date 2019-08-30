@@ -1,0 +1,10 @@
+
+dubbo:
+  application:
+    name: consumer
+  registry:
+    address: zookeeper://120.78.181.228:2181
+
+debug: true
+server:
+  port: 7070

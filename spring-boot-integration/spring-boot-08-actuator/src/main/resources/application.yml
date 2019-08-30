@@ -1,0 +1,27 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      # \u5B9A\u5236\u8BBF\u95EE\u7684\u6839\u8DEF\u5F84
+      base-path: /monitor
+      path-mapping:
+        # \u81EA\u5B9A\u4E49\u7AEF\u70B9(EndPoint)
+        # \u8BE6\u7EC6\u7684\u7AEF\u70B9\u53EF\u4EE5\u5728\u5B98\u65B9\u6587\u6863\u67E5\u770B
+        beans: mybeans
+        health: myhealth
+  server:
+    port: 9090
+  endpoint:
+    health:
+      show-details: always
+
+
+
+info:
+  app:
+    id: myApp
+    version: 1.0.0
+logging:
+  level:
+    cn.llman.actuator: debug

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.llman</groupId>
+    <artifactId>spring-boot-integration</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>spring-boot-01-cache</module>
+        <module>spring-boot-02-amqp</module>
+        <module>spring-boot-04-task</module>
+        <module>spring-boot-05-security</module>
+        <module>spring-boot-06-consumer</module>
+        <module>spring-boot-06-provider</module>
+        <module>spring-boot-07-deploy</module>
+        <module>spring-boot-08-actuator</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

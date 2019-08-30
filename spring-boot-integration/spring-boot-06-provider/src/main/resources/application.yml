@@ -1,0 +1,11 @@
+dubbo:
+  application:
+    name: provider
+  registry:
+    address: zookeeper://120.78.181.228:2181
+  scan:
+    base-packages: cn.llman.provider.service
+
+
+
+debug: false
